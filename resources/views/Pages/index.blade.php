@@ -8,8 +8,9 @@
 
     </head>
     <body>
-        <a href="{{route('cookpage')}}">Cook Page</a>
-        <a href="{{route('waiterpage')}}">Waiter Page</a>
+        <a href="{{ route('show_orders') }}">Cook Page</a>
+        <a href="{{ route('show_tables') }}">Waiter Page</a>
+        <a href="{{ route('home') }}">Admin Page</a>
         
     </body>
 </html>

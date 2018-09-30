@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMomosTable extends Migration
+class CreateTablesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,8 @@ class CreateMomosTable extends Migration
      */
     public function up()
     {
-        Schema::create('momos', function (Blueprint $table) {
+        Schema::create('tables', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('quantity');
-            $table->integer('price');
             $table->string('table_no');
             $table->timestamps();
         });
@@ -29,6 +27,6 @@ class CreateMomosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('mo_mos');
+        Schema::dropIfExists('tables');
     }
 }
